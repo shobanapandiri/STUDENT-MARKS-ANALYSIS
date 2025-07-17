@@ -24,6 +24,7 @@ df["Average"] = df[["Math", "Science", "English"]].mean(axis=1)
 print("\nTop 3 Students by Average Marks:\n", df.sort_values(by="Average", ascending=False).head(3))
 #Slincing
 print(df[:3])
+#output
 Student Marks:
        Name  Math  Science  English
 0    Alice    85       90       88
@@ -38,11 +39,13 @@ Top 3 Students by Average Marks:
 2  Charlie    92       85       87  88.000000
 0    Alice    85       90       88  87.666667
 print(df[:3])
+#output
 Name  Math  Science  English    Average
 0    Alice    85       90       88  87.666667
 1      Bob    78       75       80  77.666667
 2  Charlie    92       85       87  88.000000
 print(df[["Name", "Math"]])
+#output
       Name  Math
 0    Alice    85
 1      Bob    78
@@ -50,25 +53,30 @@ print(df[["Name", "Math"]])
 3    David    70
 4      Eva    88
 print(df.iloc[1:4])
+#output
 Name  Math  Science  English    Average
 1      Bob    78       75       80  77.666667
 2  Charlie    92       85       87  88.000000
 3    David    70       65       72  69.000000
 print(df.iloc[0:3, 1:4])
+#output
 Math  Science  English
 0    85       90       88
 1    78       75       80
 2    92       85       87
 print(df[df["Math"]>85])
+#output
 Name  Math  Science  English    Average
 2  Charlie    92       85       87  88.000000
 4      Eva    88       95       91  91.333333
 print(df.sort_values(by="Average",ascending=False).head(3))
+#output
 Name  Math  Science  English    Average
 4      Eva    88       95       91  91.333333
 2  Charlie    92       85       87  88.000000
 0    Alice    85       90       88  87.666667
 df[df["Average"] < df["Average"].mean()]
+#output
 Name	Math	Science	English	Average
 1	Bob	78	75	80	77.666667
 3	David	70	65	72	69.000000
